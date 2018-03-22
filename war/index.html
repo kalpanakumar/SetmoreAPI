@@ -1,0 +1,18 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<script>
+$(function(){
+	alert("hi");
+	var url = "/services";
+	$.ajax({
+		  url : url,
+		 type: 'get',
+		 success: function(data){
+			console.log(data);	 
+			}	
+		});
+	
+});
+
+</script>
